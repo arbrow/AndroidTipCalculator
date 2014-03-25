@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.laurengariepy.android.tipcalculator.CalculatorActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <EditText
+        android:id="@+id/etBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:hint="@string/et_hint" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:textSize="18sp"
+        android:text="@string/tv_tip_amount" />
+
+    <Button
+        android:id="@+id/btnMediumTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/btn_fifteen_label" />
+
+    <Button
+        android:id="@+id/btnLargeTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnMediumTip"
+        android:layout_alignBottom="@+id/btnMediumTip"
+        android:layout_toRightOf="@+id/btnMediumTip"
+        android:text="@string/btn_twenty_label" />
+
+    <Button
+        android:id="@+id/btnSmallTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/btnMediumTip"
+        android:text="@string/btn_ten_label" />
+
+</RelativeLayout>
